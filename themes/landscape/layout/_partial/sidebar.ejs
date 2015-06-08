@@ -1,0 +1,10 @@
+<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+  <% theme.widgets.forEach(function(widget){ %>
+    <%- partial('_widget/' + widget) %>
+  <% }) %>
+  <div class="widget-wrap">
+  	<h3 class="widget-title">我的豆瓣FM秀</h3>
+  	<div style="margin-left:15px;"><script src="http://img3.douban.com/f/shire/b5b388ff620cf7006188492cc075a423519ba257/js/radiowidget.js?doubanid=46888103&maxresults=3"></script>
+  	</div>
+  </div>
+</aside>
